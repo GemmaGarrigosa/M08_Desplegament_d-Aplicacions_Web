@@ -44,6 +44,5 @@ jobs:
 
       - name: divideix
         run: curl http://127.0.0.1:5000/divideix/8/2 | grep '{"resultat":4.0}'
-      - name: matarrrrr
-        run: killall python3
+     
 
