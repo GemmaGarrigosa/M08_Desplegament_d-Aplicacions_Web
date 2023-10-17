@@ -43,5 +43,5 @@ jobs:
         run: curl http://127.0.0.1:5000/multiplica/2/2 | grep '{"resultat":4}'
 
       - name: divideix
-        run: curl http://127.0.0.1:5000/divideix/8/2 | grep '{"resultat":4}'
+        run: curl http://127.0.0.1:5000/divideix/8/2 | grep '{"resultat":4.0}'
 
