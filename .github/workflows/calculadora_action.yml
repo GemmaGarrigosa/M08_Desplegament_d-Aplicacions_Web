@@ -34,4 +34,4 @@ jobs:
         run: python3 api_calculadora.py &
 
       - name: Fa el curl 
-        run: curl http://127.0,0,1:5000/multiplica/2/2 | grep ´{"resultat":4}´
+        run: curl http://127.0,0.1:5000/multiplica/2/2 | grep ´{"resultat":4}´
