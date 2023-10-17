@@ -33,5 +33,15 @@ jobs:
       - name: Executa la app
         run: python3 api_calculadora.py &
 
-      - name: Fa el curl 
-        run: curl http://127.0.0.1:5000/multiplica/2/2
+      - name: suma
+        run: curl http://127.0.0.1:5000/suma/2/2 | grep '{"resultat":4}'
+
+      - name: resta
+        run: curl http://127.0.0.1:5000/resta/8/4 | grep '{"resultat":4}'
+
+      - name: multiplica
+        run: curl http://127.0.0.1:5000/multiplica/2/2 | grep '{"resultat":4}'
+
+      - name: divideix
+        run: curl http://127.0.0.1:5000/divideix/8/2 | grep '{"resultat":4}'
+
